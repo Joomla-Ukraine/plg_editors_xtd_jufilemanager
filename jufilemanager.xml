@@ -2,7 +2,7 @@
 <extension type="plugin" group="editors-xtd" method="upgrade">
     <name>PLG_EDITORS_XTD_JUFILEMANAGER</name>
     <creationDate>@date@</creationDate>
-    <copyright>(C) 2023-@year@ Denys Nosov, Joomla! Ukraine</copyright>
+    <copyright>(C) @year@ Denys Nosov, Joomla! Ukraine</copyright>
     <packagerurl>https://joomla-ua.org</packagerurl>
     <author>Denys Nosov, Joomla! Ukraine</author>
     <authorEmail>denys@joomla-ua.org</authorEmail>
