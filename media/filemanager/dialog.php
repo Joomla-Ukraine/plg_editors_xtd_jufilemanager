@@ -584,7 +584,7 @@ $get_params = http_build_query($get_params);
                                         <!-- The global progress bar -->
                                         <div class="progress progress-striped active" role="progressbar"
                                              aria-valuemin="0" aria-valuemax="100">
-                                            <div class="bar bar-success" style="width:0%;"></div>
+                                            <div class="bar bar-success" style="width:0;"></div>
                                         </div>
                                         <!-- The extended global progress state -->
                                         <div class="progress-extended"></div>
@@ -978,7 +978,7 @@ $get_params = http_build_query($get_params);
                                        class="hide"/>
                                 <label id="ff-item-type-all" title="<?php echo trans('All'); ?>"
                                        <?php if ($_GET['type'] == 1 || $_GET['type'] == 3){ ?>style="visibility: hidden;" <?php } ?>
-                                       data-item="ff-item-type-all" for="select-type-all" style="margin-rigth:0px;"
+                                       data-item="ff-item-type-all" for="select-type-all" style="margin-rigth:0;"
                                        class="tip btn btn-inverse ff-label-type-all"><?php echo trans('All'); ?></label>
 
                                 <?php if (!empty($config['remove_header'])): ?>
@@ -1564,7 +1564,7 @@ $get_params = http_build_query($get_params);
 <!-- loading div start -->
 <div id="loading_container" style="display:none;">
     <div id="loading"
-         style="background-color:#000; position:fixed; width:100%; height:100%; top:0px; left:0px;z-index:100000"></div>
+         style="background-color:#000; position:fixed; width:100%; height:100%; top:0; left:0;z-index:100000"></div>
     <img id="loading_animation" src="img/storing_animation.svg" alt="loading"
          style="z-index:100001; width:64px; height:64px; margin-left:-32px; margin-top:-32px; position:fixed; left:50%; top:50%">
 </div>
