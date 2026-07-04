@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="editors-xtd" method="upgrade">
+    <name>PLG_EDITORS_XTD_JUFILEMANAGER</name>
+    <creationDate>@date@</creationDate>
+    <copyright>(C) 2023-@year@ Denys Nosov, Joomla! Ukraine</copyright>
+    <packagerurl>https://joomla-ua.org</packagerurl>
+    <author>Denys Nosov, Joomla! Ukraine</author>
+    <authorEmail>denys@joomla-ua.org</authorEmail>
+    <authorUrl>https://joomla-ua.org</authorUrl>
+    <version>@version@</version>
+    <license>GNU/GPL Version 2 or later and Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License</license>
+    <description>PLG_EDITORS_XTD_JUFILEMANAGER_XML_DESCRIPTION</description>
+
+    <namespace path="src">JU\Plugin\EditorsXtd\JUFileManager</namespace>
+
+    <files>
+        <folder plugin="jufilemanager">services</folder>
+        <folder>src</folder>
+        <folder>language</folder>
+    </files>
+
+    <media destination="plg_editors_xtd_jufilemanager" folder="media">
+        <folder>js</folder>
+        <folder>filemanager</folder>
+    </media>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_editors-xtd_jufilemanager.ini</language>
+        <language tag="en-GB">language/en-GB/plg_editors-xtd_jufilemanager.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field
+                    name="images_folder"
+                    type="text"
+                    default="images"
+                    label="PLG_EDITORS_XTD_JUFILEMANAGER_FIELD_IMAGES_FOLDER_LABEL"
+                    description="PLG_EDITORS_XTD_JUFILEMANAGER_FIELD_IMAGES_FOLDER_DESC"
+                />
+
+                <field
+                    name="files_folder"
+                    type="text"
+                    default="files"
+                    label="PLG_EDITORS_XTD_JUFILEMANAGER_FIELD_FILES_FOLDER_LABEL"
+                    description="PLG_EDITORS_XTD_JUFILEMANAGER_FIELD_FILES_FOLDER_DESC"
+                />
+
+                <field
+                    name="allowed_groups"
+                    type="usergrouplist"
+                    multiple="true"
+                    label="PLG_EDITORS_XTD_JUFILEMANAGER_FIELD_ALLOWED_GROUPS_LABEL"
+                    description="PLG_EDITORS_XTD_JUFILEMANAGER_FIELD_ALLOWED_GROUPS_DESC"
+                />
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
