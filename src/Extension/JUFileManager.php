@@ -68,6 +68,9 @@ final class JUFileManager extends CMSPlugin implements SubscriberInterface
             'token' => Session::getFormToken(),
         ]);
 
+        Text::script('PLG_EDITORS_XTD_JUFILEMANAGER_BUTTON_IMAGE');
+        Text::script('PLG_EDITORS_XTD_JUFILEMANAGER_BUTTON_FILE');
+
         $buttonImage = $this->_name.'-image';
 
         if (!\in_array($buttonImage, $disabled)) {
@@ -76,11 +79,13 @@ final class JUFileManager extends CMSPlugin implements SubscriberInterface
                     $buttonImage,
                     [
                         'action' => 'jufilemanager-open',
-                        'text' => Text::_('PLG_EDITORS-XTD_JUFILEMANAGER_BUTTON_IMAGE'),
+                        'text' => Text::_('PLG_EDITORS_XTD_JUFILEMANAGER_BUTTON_IMAGE'),
                         'icon' => 'image',
                         'iconSVG' => '',
                     ],
-                    ['kind' => 'image']
+                    [
+                        'kind' => 'image',
+                    ]
                 )
             );
         }
@@ -93,11 +98,13 @@ final class JUFileManager extends CMSPlugin implements SubscriberInterface
                     $buttonFile,
                     [
                         'action' => 'jufilemanager-open',
-                        'text' => Text::_('PLG_EDITORS-XTD_JUFILEMANAGER_BUTTON_FILE'),
+                        'text' => Text::_('PLG_EDITORS_XTD_JUFILEMANAGER_BUTTON_FILE'),
                         'icon' => 'file',
                         'iconSVG' => '',
                     ],
-                    ['kind' => 'file']
+                    [
+                        'kind' => 'file',
+                    ]
                 )
             );
         }
